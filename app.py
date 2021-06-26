@@ -4,6 +4,7 @@ import logging
 
 app = Flask(__name__)
 
+# log configuration
 logging.basicConfig(filename="logs/app.log", level=logging.DEBUG, format="%(asctime)s %(levelname)s %(message)s")
 
 @app.route("/")
